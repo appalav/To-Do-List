@@ -1,0 +1,42 @@
+
+body{
+   
+    margin: 0%;
+    background: center / cover  no-repeat url("../images/hh.jpg");
+}
+
+/* main body */
+div{
+   width: 60%;
+   height: 30%;
+   background-color:none;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   flex-wrap: nowrap;
+   position: absolute;
+   top:0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+   
+} 
+/* Headings designing */
+.main {
+    margin:auto;
+    font-family: 'Pacifico', cursive;
+}
+/* Button designing */
+#butt{
+    background-color: #ece1dc;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+#butt:hover{
+    background-color: #9b9792;
+}

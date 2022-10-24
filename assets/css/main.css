@@ -1,0 +1,103 @@
+
+body{
+   
+    margin: 0%;
+    background: center / cover  no-repeat url("../images/backgroundmain.jpg");
+    font-family: 'Pacifico', cursive;
+    color: #744631;
+}
+/* designing for the form  */
+main {
+    margin-top: 50px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#sec-section {
+    display: flex;
+    justify-content: center;
+    /* height: 80px; */
+    margin: auto;
+    max-width: 66%;
+}
+/* horizontal lines */
+.hor-line{
+    width: 66%;
+    border-top: 3px solid #8f614b;
+}
+/* vertical lines */
+.vl{
+    border-left: 3px solid #8f614b;
+    height: 60px;
+}
+/* form design including the textbox and other lables  */
+#Description{
+    text-align: center;
+}
+#textbox{
+    border: none;
+    height: 40px;
+    width: 66%;
+    background-color: #eaeceb;
+}
+#category{
+   margin-left: 20px; 
+}
+#duedate{
+    width: 25%;
+} 
+.label{
+    font-size: 20px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.w12{
+    width: 100%;
+}
+.align-start{
+    align-items: flex-start;
+}
+.padding-l-16{
+    padding-left:16px ;
+}
+#butt{
+    margin-top: 10px;
+    margin-bottom: 40px; 
+}
+
+/* this specifies how the list would appear on the acreen */
+
+ul{
+    margin-top: -10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    flex-direction: column;
+}
+#list{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    
+}
+
+p{
+    width: 80px;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.vl-1{
+    border-left: 3px solid #8f614b;
+    height: auto;
+}

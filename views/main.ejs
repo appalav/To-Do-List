@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title%>
+        </title>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <main>
+            <!-- form which gets the data from the user -->
+            <h1 class="main">
+                Lets Keep the track of Todays Work!!!
+            </h1>
+            <form action="/create-task" method="POST" >
+                <hr class="hor-line"><div id="Description">
+                <label for="Work" class="label">Description</label> <br>
+                <input type="text" name="work" placeholder="What do you need to do today?" required id="textbox">
+                </div> <hr class="hor-line">
+                <div id="sec-section">
+                    <div class="column w12 align-start">
+                        <label for="category" class="label column">Choose a category
+                        </label>
+                        <select name="category" id="textbox" class="w12">
+                            <option value="Home">Home</option>
+                            <option value="Work">Work</option>
+                            <option value="School">School</option>
+                            <option value="Personal">Personal</option>
+                        </select>
+                    </div>
+                    <div class="column vl w12 align-start padding-l-16">
+                        <label for="duedate" class="label  column">Duedate
+                        </label> 
+                        <input type="date" id="textbox" name="duedate">     
+                    </div>
+                </div>  
+                <hr class="hor-line">
+                <div id="butt">
+                    <button type="submit"><img src="https://img.icons8.com/dusk/64/000000/add--v1.png"/></button>
+                </div>
+            </form>
+        </main>
+            <!-- Structure to display the list of work -->
+            <div >
+                <ul> 
+                    <% for (let i of task_list) { %>  
+                       <div > 
+                        <hr class="hor-line" style="width:85%; margin:0px;">
+                            <li id="list">
+                                <p style="width: 200px;"><%= i.work %></p> 
+                                <p class="vl-1"><%= i.category %></p> <br>
+                                <p class="vl-1" style="width: 115px;"><%= i.duedate %></p>
+                            
+                                <a href="/delete-task/?id=<%= i.id %>" class="vl-1">
+                                <img src="https://img.icons8.com/dusk/64/000000/delete-forever.png" style="width: 35px; height: 35px; margin-left: 10px"/>
+                                </a>
+                            </li>
+                            <hr class="hor-line" style="width:85%; margin:0px;">
+                        </div>
+                    <% } %>
+                </ul>     
+            </div>
+       
+    </body>
+</html>
